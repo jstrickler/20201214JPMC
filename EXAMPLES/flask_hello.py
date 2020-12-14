@@ -4,9 +4,12 @@ from flask import Flask
 app = Flask(__name__)  # <1>
 
 
+# @time_stamp
+# @ham
 @app.route('/')  # <2>
 def index():  # <3>
     return '<h1>Hello, Flask world!</h1>' # <4>
+
 
 # app.register_route(index, '/')
 

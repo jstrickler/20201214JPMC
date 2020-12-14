@@ -9,7 +9,6 @@ from cheeses import CHEESES, cheese_makers
 app = Flask(__name__)
 api = Api(app)
 
-
 class Cheese(Resource):
     """
     The Cheese resource

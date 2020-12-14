@@ -2,7 +2,7 @@
 import requests
 
 print('PUT:')
-r = requests.put("http://httpbin.org/put", data={'spam': 'ham'}) # <1>
+r = requests.put("http://httpbin.org/put", data={'time_stamp': 'ham'}) # <1>
 print(r.status_code, r.content.decode())
 print('-' * 60)
 

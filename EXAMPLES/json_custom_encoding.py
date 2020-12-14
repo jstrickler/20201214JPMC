@@ -34,7 +34,7 @@ def encode(obj):  # <4>
 
 
 data = {  # <10>
-    'spam': [1, 2, 3],
+    'time_stamp': [1, 2, 3],
     'ham': ('a', 'b', 'c'),
     'toast': date(2014, 8, 1),
     'parrots': parrots,

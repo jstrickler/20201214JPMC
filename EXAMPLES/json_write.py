@@ -17,7 +17,7 @@ george = [
         'party': None,
     },
     {
-        'spam': 'ham',
+        'time_stamp': 'ham',
         'eggs': [1.2, 2.3, 3.4],
         'toast': {'a': 5, 'm': 9, 'c': 4},
     }

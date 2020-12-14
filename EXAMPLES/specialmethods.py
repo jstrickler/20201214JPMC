@@ -19,10 +19,10 @@ class Special():
 
 
 if __name__ == '__main__':
-    s = Special('spam')
+    s = Special('time_stamp')
     t = Special('eggs')
     u = Special\
-        ('spam')
+        ('time_stamp')
     v = Special(5)  # <6>
     w = Special(22)
 

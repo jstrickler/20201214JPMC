@@ -30,7 +30,7 @@ parrots = [
 ]
 
 data = {
-    'spam': [1, 2, 3],
+    'time_stamp': [1, 2, 3],
     'ham': ('a', 'b', 'c'),
     'date': date(2014, 8, 1),
     'timestamp': datetime(2014, 8, 1, 15, 34, 19),
