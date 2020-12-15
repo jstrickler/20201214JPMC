@@ -14,7 +14,7 @@ print(solar['innerplanets'])  # <3>
 print('*' * 60)
 print(solar['innerplanets'][0]['name'])
 print('*' * 60)
-for planet in solar['innerplanets'] + solar['outerplanets']:
+for planet in solar['innerplanets'] + solar['outerplanets'] + solar['dwarfplanets']:
     print(planet['name'])
 
 print("*" * 60)

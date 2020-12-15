@@ -32,12 +32,13 @@ def app(path):  # outer decorator
 
     def inner_decorator(old_function):
         routes[path] = old_function
+        return old_function
 
-        @wraps(old_function)
-        def replacement():
-            result = old_function()
-            return result
-        return replacement
+        # @wraps(old_function)
+        # def replacement():
+        #     result = old_function()
+        #     return result
+        # return replacement
 
     return inner_decorator
 
@@ -51,5 +52,7 @@ def foo():
 @app('/wombats')
 def bar():
     pass
+
+# bar = app('/wombats')(bar)
 
 print(routes)

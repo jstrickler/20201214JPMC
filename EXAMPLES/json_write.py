@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 
 import json
+from datetime import date
+james_bd = date(2014, 8, 1)
 
 george = [
     {
@@ -17,6 +19,7 @@ george = [
         'party': None,
     },
     {
+        'james_bd': james_bd,
         'time_stamp': 'ham',
         'eggs': [1.2, 2.3, 3.4],
         'toast': {'a': 5, 'm': 9, 'c': 4},

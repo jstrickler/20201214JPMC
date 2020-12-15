@@ -5,6 +5,10 @@ from pytest import fixture
 def common_fixture():  # <1>
     return "DATA"
 
+@fixture
+def answer():
+    return 42
+
 
 def pytest_runtest_setup(item):  # <2>
     print("Hello from setup,", item)

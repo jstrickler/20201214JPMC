@@ -13,6 +13,10 @@ def test_two():
 def test_three():
     assert 1
 
+@pytest.mark.slow
+def test_sloth():
+    assert 1
+
 if __name__ == '__main__':
     pytest.main([__file__, '-m alpha'])  # <3>
 

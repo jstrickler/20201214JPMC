@@ -6,7 +6,7 @@ import yaml
 PLANET_SECTIONS = "inner outer plutoid".split()
 
 with open('../DATA/solar.yaml') as solar_in:
-    solar_data = yaml.load(solar_in, Loader=yaml.FullLoader)
+    solar_data = yaml.safe_load(solar_in)
 
 star = solar_data['star']
 print("Our star is {}\n".format(star))

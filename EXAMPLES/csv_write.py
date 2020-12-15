@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 import sys
 import csv
+import pandas as pd
 
 data = (
     ('February', 28, 'The shortest month, with 28 or 29 days'),
@@ -15,3 +16,5 @@ with open('../TEMP/stuff.csv', 'w') as stuff_in:
         wtr = csv.writer(stuff_in) # <1>
     for row in data:
         wtr.writerow(row) # <2>
+        stuff_in.flush() # might be slower...
+

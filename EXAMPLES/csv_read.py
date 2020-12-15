@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 import csv
+import pandas as pd
 
 with open('../DATA/knights.csv') as knights_in:
     rdr = csv.reader(knights_in)  # <1>
@@ -7,3 +8,9 @@ with open('../DATA/knights.csv') as knights_in:
         print('{:4s} {:9s} {}'.format(
             title, name, quest
         ))
+
+# 'names' means "column names"
+df = pd.read_csv('../DATA/knights.csv', names='name title color quest comment num ladies'.split())
+print(df)
+print(df.loc[:,'num'])
+print(df.loc[:,'num'].sum())
