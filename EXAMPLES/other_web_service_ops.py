@@ -20,4 +20,5 @@ print('-' * 60)
 print('OPTIONS:')
 r = requests.options("http://httpbin.org/get") # <4>
 print(r.status_code, r.content.decode())
+print(r.headers)
 print('-' * 60)

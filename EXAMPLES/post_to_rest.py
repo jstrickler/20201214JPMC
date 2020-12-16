@@ -12,11 +12,12 @@ for i in range(3):
             'label': 'test_' + str(i)
         },
         cookies={'python': 'testing'},
-        headers={'X-Python': 'Guido van Rossum'},
+        headers={'X-Python': 'Guido van Rossum', 'X-Nerd': 'John Strickler',
+                 'X-Bank': 'JPMC'},
     )
     if response.status_code in (requests.codes.OK, requests.codes.created):
         print(response.content.decode())
         time.sleep(2)
 
-    print(response.status_code)
-    print(response.content.decode())
+    # print(response.status_code)
+    # print(response.content.decode())
