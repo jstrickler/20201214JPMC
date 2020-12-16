@@ -8,7 +8,7 @@ class TrimmedFile:
     def __iter__(self):  # <2>
         return self
 
-    def __next__(self):  # <3>
+    def __next__(self):  # <3>  # like 'yield'
         line = self._file_in.readline()
         if line == '':
             raise StopIteration  # <4>

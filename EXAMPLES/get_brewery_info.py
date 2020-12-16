@@ -12,7 +12,11 @@ with requests.Session() as session:  # <5>
 
     for brewery_id in BREWERY_IDS:
         response = session.get(BREWERY + brewery_id)  # <7>
+        print(response.content)
+        print('-' * 60)
         resource_data = response.json()  # <8>
+        pprint(resource_data)
+        print('-' * 60)
         brewery_data = resource_data['data']  # <9>
         brewery_name = brewery_data['name']
         brewery_website = brewery_data['website']
